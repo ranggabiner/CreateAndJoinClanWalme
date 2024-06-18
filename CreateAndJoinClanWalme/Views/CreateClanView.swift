@@ -11,6 +11,8 @@ struct CreateClanView: View {
     @ObservedObject var viewModel: CreateClanViewModel
     @Binding var appClan: Clan?
 
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         VStack {
             TextField("Enter Name of the Clan", text: $viewModel.clanName)
@@ -29,6 +31,7 @@ struct CreateClanView: View {
                         if let encoded = try? JSONEncoder().encode(updatedClan) {
                             UserDefaults.standard.set(encoded, forKey: "savedClan")
                         }
+                        presentationMode.wrappedValue.dismiss()
                     }
                 }
             }) {
@@ -42,7 +45,6 @@ struct CreateClanView: View {
         .padding()
     }
 }
-
 
 #Preview {
     CreateClanView(viewModel: CreateClanViewModel(appClan: .init(id: "1234-adsffa", owner: "1231-gadfs", invite_code: "GSRI123H", trees: 0)), appClan: .constant(.init(id: "1234-adsffa", owner: "1231-gadfs", invite_code: "GSRI123H", trees: 0)))

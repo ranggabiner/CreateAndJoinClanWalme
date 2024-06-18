@@ -12,16 +12,12 @@ struct ContentView: View {
     @State var appClan: Clan? = nil
 
     var body: some View {
-        if let appClan = appClan {
-            MyClanView(appClan: appClan)
-        } else {
-            CreateClanView(viewModel: CreateClanViewModel(appClan: appClan), appClan: $appClan)
-                .onAppear {
-                    if let savedClanData = savedClanData,
-                       let savedClan = try? JSONDecoder().decode(Clan.self, from: savedClanData) {
-                        appClan = savedClan
-                    }
-                }
+        Group {
+            if let appClan = appClan {
+                MyClanView(appClan: $appClan)
+            } else {
+                CreateOrJoinView()
+            }
         }
     }
 }

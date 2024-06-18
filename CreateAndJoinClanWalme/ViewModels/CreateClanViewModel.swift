@@ -30,7 +30,12 @@ class CreateClanViewModel: ObservableObject {
             let isSuccess = try await userManager.insertClan(newClan)
 
             if isSuccess {
-                appClan = newClan
+                DispatchQueue.main.async {
+                    self.appClan = newClan
+                    if let encoded = try? JSONEncoder().encode(newClan) {
+                        UserDefaults.standard.set(encoded, forKey: "savedClan")
+                    }
+                }
             } else {
                 print("Failed to create clan")
             }

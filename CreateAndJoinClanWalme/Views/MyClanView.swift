@@ -8,24 +8,31 @@
 import SwiftUI
 
 struct MyClanView: View {
-    var appClan: Clan
+    @Binding var appClan: Clan?
 
     var body: some View {
         VStack {
-            Text("Welcome to \(appClan.clan_name) Clan")
+            Text("Welcome to \(appClan?.clan_name ?? "") Clan")  // harus fetch
+                .font(.largeTitle)
+                .padding()
+            
+            Text("Amount of Tree: \(appClan?.trees ?? 10) Clan") // harus fetch
                 .font(.largeTitle)
                 .padding()
 
-            Text("Description: \(appClan.clan_description)")
+            Text("Description: \(appClan?.clan_description ?? "")")  // harus fetch
                 .padding()
 
-            Text("Invite Code: \(appClan.invite_code)")
+            Text("Invite Code: \(appClan?.invite_code ?? "")")
                 .padding()
 
             Button(action: {
-                // Handle exit clan logic
+                Task {
+                    await deleteClan()
+                    appClan = nil
+                }
             }) {
-                Text("Exit Clan")
+                Text("Delete Clan")
                     .padding()
                     .background(Color.red)
                     .foregroundColor(.white)
@@ -33,7 +40,26 @@ struct MyClanView: View {
             }
         }
     }
+
+    func deleteClan() async {
+        guard let clan = appClan else { return }
+
+        do {
+            let isSuccess = try await ClanManager.shared.deleteClan(clan.id)
+            if isSuccess {
+                DispatchQueue.main.async {
+                    appClan = nil
+                    UserDefaults.standard.removeObject(forKey: "savedClan")
+                }
+            } else {
+                print("Failed to delete clan")
+            }
+        } catch {
+            print("Error: \(error.localizedDescription)")
+        }
+    }
 }
+
 #Preview {
-    MyClanView(appClan: .init(id: "1234-adsffa", owner: "1231-gadfs", invite_code: "GSRI123H", trees: 0))
+    MyClanView(appClan: .constant(.init(id: "217893-hasdfi", owner: "saidf1289", invite_code: "1723HDJKA", trees: 0)))
 }
