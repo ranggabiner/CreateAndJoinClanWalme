@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F12761F2C2161610014981E /* CreateAndJoinClanWalmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12761E2C2161610014981E /* CreateAndJoinClanWalmeApp.swift */; };
+		8F1276212C2161610014981E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276202C2161610014981E /* ContentView.swift */; };
+		8F1276232C2161630014981E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1276222C2161630014981E /* Assets.xcassets */; };
+		8F1276262C2161630014981E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1276252C2161630014981E /* Preview Assets.xcassets */; };
+		8F12762F2C21617C0014981E /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8F12762E2C21617C0014981E /* Supabase */; };
+		8F1276352C2161A20014981E /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276342C2161A10014981E /* Clan.swift */; };
+		8F12763A2C2162B90014981E /* CreateOrJoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276392C2162B90014981E /* CreateOrJoinView.swift */; };
+		8F12763F2C2164400014981E /* JoinClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12763E2C21643D0014981E /* JoinClanView.swift */; };
+		8F1276412C21644E0014981E /* CreateClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276402C2164470014981E /* CreateClanView.swift */; };
+		8F1276432C2168300014981E /* MyClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276422C2168300014981E /* MyClanView.swift */; };
+		8F1276462C2169710014981E /* ClanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276452C21696E0014981E /* ClanManager.swift */; };
+		8F1276482C216D1B0014981E /* CreateClanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1276472C216D140014981E /* CreateClanViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F12761B2C2161610014981E /* CreateAndJoinClanWalme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateAndJoinClanWalme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F12761E2C2161610014981E /* CreateAndJoinClanWalmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndJoinClanWalmeApp.swift; sourceTree = "<group>"; };
+		8F1276202C2161610014981E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F1276222C2161630014981E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F1276252C2161630014981E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F1276342C2161A10014981E /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
+		8F1276392C2162B90014981E /* CreateOrJoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrJoinView.swift; sourceTree = "<group>"; };
+		8F12763E2C21643D0014981E /* JoinClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinClanView.swift; sourceTree = "<group>"; };
+		8F1276402C2164470014981E /* CreateClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClanView.swift; sourceTree = "<group>"; };
+		8F1276422C2168300014981E /* MyClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClanView.swift; sourceTree = "<group>"; };
+		8F1276452C21696E0014981E /* ClanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanManager.swift; sourceTree = "<group>"; };
+		8F1276472C216D140014981E /* CreateClanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClanViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F1276182C2161610014981E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F12762F2C21617C0014981E /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F1276122C2161610014981E = {
+			isa = PBXGroup;
+			children = (
+				8F12761D2C2161610014981E /* CreateAndJoinClanWalme */,
+				8F12761C2C2161610014981E /* Products */,
+				8F12762D2C21617C0014981E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F12761C2C2161610014981E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F12761B2C2161610014981E /* CreateAndJoinClanWalme.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F12761D2C2161610014981E /* CreateAndJoinClanWalme */ = {
+			isa = PBXGroup;
+			children = (
+				8F1276332C2161970014981E /* Models */,
+				8F1276382C21629A0014981E /* Views */,
+				8F1276312C2161880014981E /* ViewModels */,
+				8F1276302C2161820014981E /* Services */,
+				8F12761E2C2161610014981E /* CreateAndJoinClanWalmeApp.swift */,
+				8F1276202C2161610014981E /* ContentView.swift */,
+				8F1276222C2161630014981E /* Assets.xcassets */,
+				8F1276242C2161630014981E /* Preview Content */,
+			);
+			path = CreateAndJoinClanWalme;
+			sourceTree = "<group>";
+		};
+		8F1276242C2161630014981E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F1276252C2161630014981E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F12762D2C21617C0014981E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F1276302C2161820014981E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F1276452C21696E0014981E /* ClanManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F1276312C2161880014981E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8F1276472C216D140014981E /* CreateClanViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8F1276332C2161970014981E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F1276342C2161A10014981E /* Clan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F1276382C21629A0014981E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F1276402C2164470014981E /* CreateClanView.swift */,
+				8F12763E2C21643D0014981E /* JoinClanView.swift */,
+				8F1276392C2162B90014981E /* CreateOrJoinView.swift */,
+				8F1276422C2168300014981E /* MyClanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F12761A2C2161610014981E /* CreateAndJoinClanWalme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1276292C2161630014981E /* Build configuration list for PBXNativeTarget "CreateAndJoinClanWalme" */;
+			buildPhases = (
+				8F1276172C2161610014981E /* Sources */,
+				8F1276182C2161610014981E /* Frameworks */,
+				8F1276192C2161610014981E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreateAndJoinClanWalme;
+			packageProductDependencies = (
+				8F12762E2C21617C0014981E /* Supabase */,
+			);
+			productName = CreateAndJoinClanWalme;
+			productReference = 8F12761B2C2161610014981E /* CreateAndJoinClanWalme.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F1276132C2161610014981E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					8F12761A2C2161610014981E = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 8F1276162C2161610014981E /* Build configuration list for PBXProject "CreateAndJoinClanWalme" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F1276122C2161610014981E;
+			packageReferences = (
+				8F12762C2C2161740014981E /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = 8F12761C2C2161610014981E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F12761A2C2161610014981E /* CreateAndJoinClanWalme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F1276192C2161610014981E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1276262C2161630014981E /* Preview Assets.xcassets in Resources */,
+				8F1276232C2161630014981E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F1276172C2161610014981E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F12763F2C2164400014981E /* JoinClanView.swift in Sources */,
+				8F1276432C2168300014981E /* MyClanView.swift in Sources */,
+				8F1276212C2161610014981E /* ContentView.swift in Sources */,
+				8F1276412C21644E0014981E /* CreateClanView.swift in Sources */,
+				8F1276482C216D1B0014981E /* CreateClanViewModel.swift in Sources */,
+				8F12763A2C2162B90014981E /* CreateOrJoinView.swift in Sources */,
+				8F1276462C2169710014981E /* ClanManager.swift in Sources */,
+				8F12761F2C2161610014981E /* CreateAndJoinClanWalmeApp.swift in Sources */,
+				8F1276352C2161A20014981E /* Clan.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8F1276272C2161630014981E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F1276282C2161630014981E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F12762A2C2161630014981E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CreateAndJoinClanWalme/Preview Content\"";
+				DEVELOPMENT_TEAM = A23N5QDWR3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranggabiner.CreateAndJoinClanWalme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F12762B2C2161630014981E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CreateAndJoinClanWalme/Preview Content\"";
+				DEVELOPMENT_TEAM = A23N5QDWR3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranggabiner.CreateAndJoinClanWalme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F1276162C2161610014981E /* Build configuration list for PBXProject "CreateAndJoinClanWalme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1276272C2161630014981E /* Debug */,
+				8F1276282C2161630014981E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1276292C2161630014981E /* Build configuration list for PBXNativeTarget "CreateAndJoinClanWalme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F12762A2C2161630014981E /* Debug */,
+				8F12762B2C2161630014981E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F12762C2C2161740014981E /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F12762E2C21617C0014981E /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F12762C2C2161740014981E /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8F1276132C2161610014981E /* Project object */;
+}
